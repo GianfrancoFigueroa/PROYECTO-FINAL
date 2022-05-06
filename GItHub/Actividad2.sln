@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1927
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2", "Actividad2\Actividad2.csproj", "{1CF7E921-455A-4EC4-96AB-EF31F11BC5CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{06F8F37A-374A-4470-959B-B5F1BECCF787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexiones", "Conexiones\Conexiones.csproj", "{C23C92D6-117F-40CE-BD6C-BB43ECFFBBEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF7E921-455A-4EC4-96AB-EF31F11BC5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF7E921-455A-4EC4-96AB-EF31F11BC5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF7E921-455A-4EC4-96AB-EF31F11BC5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF7E921-455A-4EC4-96AB-EF31F11BC5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06F8F37A-374A-4470-959B-B5F1BECCF787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F8F37A-374A-4470-959B-B5F1BECCF787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F8F37A-374A-4470-959B-B5F1BECCF787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F8F37A-374A-4470-959B-B5F1BECCF787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23C92D6-117F-40CE-BD6C-BB43ECFFBBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23C92D6-117F-40CE-BD6C-BB43ECFFBBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23C92D6-117F-40CE-BD6C-BB43ECFFBBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23C92D6-117F-40CE-BD6C-BB43ECFFBBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {441E74F3-C6AF-40E9-A561-ED08F73E4ECA}
+	EndGlobalSection
+EndGlobal
