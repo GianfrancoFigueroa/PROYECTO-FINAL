@@ -15,22 +15,24 @@ namespace Conexiones
             Accesos accesos = new Accesos();
             try
             {
-                accesos.SetConsulta("Select Codigo, Nombre, Descripcion, IdMarca, IdCategoria, ImagenUrl, Precio from ARTICULOS");
+                accesos.SetConsulta("Select A.Codigo, A.Nombre, A.Descripcion, M.id, M.Descripcion as 'Marca', C.id, C.Descripcion as 'Categoria', A.ImagenUrl, A.Precio from ARTICULOS A, CATEGORIAS C, MARCAS M where M.Id = A.IdMarca and C.Id = A.IdCategoria");
                 accesos.exeLectura();
 
                 while (accesos.Reader.Read())
                 {
                     ClassArticulo Aux = new ClassArticulo();
-                    Aux.Codigo = (int)accesos.Reader["Codigo"];
+                    Aux.Codigo = (string)accesos.Reader["Codigo"];
                     Aux.Nombre = (string)accesos.Reader["Nombre"];
-                    Aux.Descripción = (string)accesos.Reader["Descripción"];
+                    Aux.Descripción = (string)accesos.Reader["Descripcion"];
                     Aux.Marcas = new Marcas();
+                    Aux.Marcas.ID = (int)accesos.Reader["Id"];
                     Aux.Marcas.Marca = (string)accesos.Reader["Marca"];
                     Aux.Categorias = new Categorias();
+                    Aux.Categorias.ID = (int)accesos.Reader["Id"];
                     Aux.Categorias.Categoria = (string)accesos.Reader["Categoria"];
-                    Aux.ImagenURL = (string)accesos.Reader["URL"];
+                    Aux.ImagenURL = (string)accesos.Reader["ImagenURL"];
                     Aux.Precio = (decimal)accesos.Reader["Precio"];
-
+                    
                     Lista.Add(Aux);
                 }
 

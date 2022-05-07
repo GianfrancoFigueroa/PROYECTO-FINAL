@@ -17,14 +17,14 @@ namespace Conexiones
                 Accesos accesos = new Accesos();
                 try
                 {
-                    accesos.SetConsulta("Select Id, Descripcion from CATEGORIAS");
+                    accesos.SetConsulta("Select Id, Descripcion as 'Categoria' from CATEGORIAS");
                     accesos.exeLectura();
 
                     while (accesos.Reader.Read())
                     {
                         Categorias Aux = new Categorias();
-                         Aux.ID = (int)accesos.Reader["ID"];
-                        Aux.Categoria = (string)accesos.Reader["Descripcion"];
+                        Aux.ID = (int)accesos.Reader["Id"];
+                        Aux.Categoria = (string)accesos.Reader["Categoria"];
 
                         Lista.Add(Aux);
                     }

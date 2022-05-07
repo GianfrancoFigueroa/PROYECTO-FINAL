@@ -12,5 +12,10 @@ namespace Clases
 
         public string Marca { get; set; }
 
+        public override string ToString()
+        {
+            return Marca;
+        }
+
     }
 }

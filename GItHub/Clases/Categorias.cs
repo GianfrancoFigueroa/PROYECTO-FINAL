@@ -11,5 +11,10 @@ namespace Clases
         public int ID { get; set; }
 
         public string Categoria { get; set; }
+
+        public override string ToString()
+        {
+            return Categoria;
+        }
     }
 }

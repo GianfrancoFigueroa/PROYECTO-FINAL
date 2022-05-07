@@ -16,14 +16,14 @@ namespace Conexiones
                 Accesos accesos = new Accesos();
                 try
                 {
-                    accesos.SetConsulta("Select ID, Descripcion from MARCAS");
+                    accesos.SetConsulta("Select ID, Descripcion as 'Categoria' from MARCAS");
                     accesos.exeLectura();
 
                     while (accesos.Reader.Read())
                     {
                         Marcas Aux = new Marcas();
                          Aux.ID = (int)accesos.Reader["ID"];
-                         Aux.Marca = (string)accesos.Reader["Descripcion"];
+                         Aux.Marca = (string)accesos.Reader["Categoria"];
 
                         Lista.Add(Aux);
                     }
