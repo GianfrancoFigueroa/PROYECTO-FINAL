@@ -54,7 +54,9 @@ namespace Conexiones
 
             try
             {
-                accesos.SetConsulta("");
+                accesos.SetConsulta("insert into ARTICULOS values(" + Agregar.Codigo + ", '" + Agregar.Nombre + "', '" + Agregar.Descripción + "'@IDMarca, IDCategoria, " + Agregar.Precio + "  )");
+                accesos.SetearPARAMETROS("IDMarca", Agregar.Marcas.ID);
+                accesos.SetearPARAMETROS("IDCategoria", Agregar.Categorias.ID);
                 accesos.exeLectura();
 
             }

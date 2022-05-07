@@ -31,6 +31,11 @@ namespace Conexiones
             Command.CommandText = CC;
         }
 
+        public void SetearPARAMETROS(string Parametro, object valor)
+        {
+            Command.Parameters.AddWithValue(Parametro, valor);      
+        }
+
         public void exeLectura()
         {
             Command.Connection = Connection;
